@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-
 def question_view(request, i):
     paste_title = 'questao_%s' % i
     ctx = {

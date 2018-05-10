@@ -1,0 +1,25 @@
+3-
+a) Mobile First é uma filosofia em projetos web onde se tem como princípio, pensar no design primeiro para dispositivos móveis e somente depois para desktops. No HTML e javascript interfere na navegação, e  no CSS devemos pensar em breakpoints e utilizar mediaqueries.
+
+b) Não, pois as regras para o footer foi pensado primeiro para telas maiores, visto que o footer desaparece para telas menores que 500px.
+Sendo assim, para consertarmos o problema deveríamos criar as regras pensando primeiro no mobile.
+
+4-
+
+a) O problema do N + 1 ocorre quando temos duas tabelas em bancos de dados que se relacionam e precisamos fazer uma consulta, gerando assim um loop de consultas que acarreta em perda de desempenho, porém existem meios para se contornar esse problema.
+
+b) O problema apareceria quando consultássemos todos os pastes de um usuário, sendo assim aconteceria n+1 consultas no banco de dados.
+Para resolver este problema, devemos usar um método do django chamado "selected_related" que realiza uma única query que une todos os modelos relacionados. 
+
+
+5- function Person(name,age){
+  this.name = name;
+  this.age  = age
+  
+  this.is_adult = function(){
+    if(this.age >=18)
+      return True;
+    else
+      return False;
+  }
+}

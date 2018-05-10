@@ -14,5 +14,17 @@
     <p>Cada paste deve conter um título, uma linguagem e o conteúdo.</p>
     <p>Linguagens reconhecidas: Python, Javascript e Outros</p>
     <p>Existem questões ocultas! Procure no código</p>
+    <h1>New paste</h1>
+    
+    <form method="POST" class="paste-form">
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{csrf_token}}"> 
+      {{ form.as_p() }}
+      <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+  
   </main>
+
+
+
+
 {% endblock %}
